@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: funhouse-room-room17
+spec:
+  selector:
+    funhouse.riddler/room-id: room17
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
